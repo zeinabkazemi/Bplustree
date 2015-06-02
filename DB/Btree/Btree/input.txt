@@ -1,0 +1,37 @@
+*INSERT
+Walker, Chris
+WALKER, CHRIS
+Rawlinson, Edward M
+Mason, Eric J
+Wu, Chang‐Yu
+*delete
+WALKER, CHRIS
+*SNAPSHOT
+*SEARCH
+rawlinson, edward m
+Wong, Qun
+*INSERT
+Chiang, Mark
+*DELETE
+Long, Robert
+*SNAPSHOT
+*UPDATE
+WALKER, CHRIS
+New project
+*seaRCH
+WALKER, CHRIS
+*INSERT
+Walker, Chris
+Toleti, Srinivas
+WALKER, CHRIS
+Rawlinson, Edward M
+Mason, Eric J
+Wu, Chang‐Yu
+Long, Robert
+*SNAPSHOT
+*DELETE
+Rawlinson, Edward M
+Mason, Eric J
+Wu, Chang‐Yu
+Long, Robert
+*SNAPSHOT
