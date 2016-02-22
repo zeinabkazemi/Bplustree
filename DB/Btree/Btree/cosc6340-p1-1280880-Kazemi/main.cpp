@@ -1,16 +1,18 @@
-//
+
 //  main.cpp
 //  Btree
 //
 //  Created by Zeinab Kazemi on 4/17/15.
 //  Copyright (c) 2015 Zeinab Kazemi. All rights reserved.
-//
+//  zkazemi90@gmail.com
 
 #include <iostream>
 #include <vector>
 #include <string>
 #include <cmath>
 #include <map>
+
+
 using namespace std;
 
 //each node of the B+ tree
@@ -34,6 +36,7 @@ public:
         marked=false;
     }
 };
+
 class Splitreturn
 {
 public:
@@ -41,6 +44,7 @@ public:
     Node* second;
     string midval;
 };
+
 //the data base itself
 class BPlusTree
 {
@@ -137,6 +141,7 @@ Splitreturn* BPlusTree::midnode_split(Node* node)
     res->second = secondnode;
     return res;
 }
+
 // this function is called when the leaf node needs to be splited
 Splitreturn* BPlusTree::split(Node* node)
 {
@@ -145,7 +150,6 @@ Splitreturn* BPlusTree::split(Node* node)
     vector<string> temp;
     
     Node* secondnode =  new Node(numofkeys);
-   // cout<<node->keys.size()<<endl;
     for(int i =0; i < node->keys.size(); i++)
     {
         temp.push_back(node->keys[i]);
@@ -515,7 +519,6 @@ void BPlusTree::traverse(Node* root)
             if(k >=0)
                 cout<<root->keys[k]<<endl;
         }
-        //cout<<root->keys[i]<<endl;
         if(!root->pointers.empty())
           traverse(root->pointers[i]);
         
@@ -621,7 +624,7 @@ void readfile()
 }
 
 int main(int argc, const char * argv[]) {
-    
+   //sample tests    
    /* BPlusTree tree(3);
     tree.insert_to_BTree("b");
 
